@@ -1,15 +1,13 @@
-
-import './App.css';
+import CounterDemo from './lab/lab6';
+import TextColorDemo from './lab/lab7';
 import Test1 from './prac/test1';
-import CounterDemo from './prac/test2';
-import TextColorDemo from './prac/test3';
 
 function App() {
   return (
     <div className="App">
       <Test1/>
       <CounterDemo/>
-      <TextColorDemo />
+      <TextColorDemo/>
       
     </div>
   );
