@@ -8,6 +8,9 @@ import DigitalClock from './lab/lab9';
 import Test1 from './prac/test1';
 import Test2 from './prac/test2';
 import React from 'react';
+import Display from './lab/lab13';
+
+import Emi from './lab/lab17';
 // import BlogContextDemo from './lab/lab11';
 // const blogInfo = {
 //   React: {
@@ -36,8 +39,11 @@ function App() {
       
       {/* <View/>
       <ViewItems />
-      <DigiClock />
-      <Bmi /> */}
+      <DigiClock /> */}
+      {/* <Bmi /> */}
+      {/* <Display /> */}
+      
+      <Emi />
     </div>
   );
 }
