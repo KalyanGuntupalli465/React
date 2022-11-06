@@ -74,3 +74,10 @@ const Emi=()=>
     )
 }
 export default Emi;
+
+
+{/* <select name="tenureType" id="tenureType" onChange={(e)=>{setSelectType(e.target.value);}}>
+<option value="" disabled="disabled" selected="hidden">select</option>
+<option value="Months">Months</option>
+<option value="Years">Years</option>
+</select> */}

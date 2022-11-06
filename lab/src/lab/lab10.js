@@ -6,30 +6,29 @@ function ViewItems() {
   const [item, setItem] = useState("");
   const [items, setItems] = useState([]);
   const handleAddItem = () => {
-    setItems([...items, {"item":item, isStriked:false}]);
+    setItems([...items, {"item":item}]);
     setItem("");
   };
   const handleDelete = (item) => {
     const fitems = items.filter((it) => it.item !== item.item);
     setItems([...fitems]);
   };
-  const handleText=(item)=>{
-    const fitems = items.map((it) => {
-      if(it.item === item.item){
-        return {
-          ...it,
-          isStriked:!it.isStriked
-        }
-    } else {
-      return it;
-    }});
-    setItems([...fitems]);  }
+  // const handleText=(item)=>{
+  //   const fitems = items.map((it) => {
+  //     if(it.item === item.item){
+  //       return {
+  //         ...it,
+  //         isStriked:!it.isStriked
+  //       }
+  //   } else {
+  //     return it;
+  //   }});
+  //   setItems([...fitems]);  }
     
-  console.log(items);
+  // console.log(items);
   const tdata = items.map((it, index) => (
     <tr key={index}>
-      <td><span onClick={() =>handleText(it)} 
-      style={{textDecoration:it.isStriked? "line-through":"none"}}>{it.item}</span></td>
+      <td>{it.item}</td>
       <td>
         <button onClick={() => handleDelete(it)}>X</button>
       </td>

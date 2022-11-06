@@ -36,7 +36,7 @@ class View extends React.Component{
                 
         <table border='1'>
             {this.state.s.map((student)=>
-            (               <tr key={student.id} >
+            (  <tr key={student.id} >
                     <td>{student.sno}</td>
                     <td>{student.name}</td>
                     <td>{student.bname}</td>

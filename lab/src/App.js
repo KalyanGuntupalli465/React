@@ -11,6 +11,8 @@ import React from 'react';
 import Display from './lab/lab13';
 
 import Emi from './lab/lab17';
+import HotelBillDemo from './lab/lab18';
+import ImageGridDemo from './lab/lab15';
 // import BlogContextDemo from './lab/lab11';
 // const blogInfo = {
 //   React: {
@@ -42,9 +44,11 @@ function App() {
       <DigiClock /> */}
       {/* <Bmi /> */}
       {/* <Display /> */}
+      <ViewItems />
       
-      <Emi />
-    </div>
+      {/* <Emi /> */}
+      <HotelBillDemo/>  
+      <ImageGridDemo/>  </div>
   );
 }
 
